@@ -1,6 +1,6 @@
 #!/bin/bash
-hg clone https://vim.googlecode.com/hg/ vim
-cd vim/src
+hg clone https://vim.googlecode.com/hg/ vim_latest
+cd vim_latest/src
 ./configure  --prefix=/usr --disable-gui --disable-selinux --enable-cscope --enable-pythoninterp --enable-multibyte --enable-xim --enable-fontset --enable-netbeans --with-features=huge 
 make
 make install
