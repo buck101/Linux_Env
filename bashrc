@@ -159,7 +159,7 @@ export PATH=$M2_HOME/bin:$PATH
 export PATH=/opt/CodeSourcery/Sourcery_G++_Lite/bin:$PATH
 export PATH=/usr/local/nginx/sbin:$PATH
 
-export GOROOT=/home/chenhui/Explore/go
+export GOROOT=~/Explores/go
 export GOBIN=$GOROOT/bin
 export GOARCH=amd64
 export GOOS=linux
