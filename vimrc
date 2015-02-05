@@ -1,26 +1,14 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Dec 17
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-" Buck
+
+
 imap jj <Esc>
 map <C-C> y
 map <C-X> d
 map <C-A> <Esc>ggVG
 
 "global setting
+syntax enable
 syntax on
 
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -28,22 +16,11 @@ set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
-else
-  set backup		" keep a backup file
-endif
+set nobackup		" do not keep a backup file, use versions instead
 set history=500		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
-
-" Don't use Ex mode, use Q for formatting
-map Q gq
 
 " CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
 " so that you can undo CTRL-U after inserting a line break.
@@ -64,11 +41,7 @@ endif
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
+filetype plugin indent on
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
@@ -164,14 +137,14 @@ let g:defaultExplorer = 0
 nmap <silent> <leader>wm :WMToggle<cr>
 
 "setting for cscope+ctags===========================================
-cs add tags/cscope.out
-cs add ~/Work/taishan/server/framecommon/tags/cscope.out 
-cs add ~/Work/taishan/server/srvframe/tags/cscope.out 
+"cs add tags/cscope.out
+"cs add ~/Work/taishan/server/framecommon/tags/cscope.out 
+"cs add ~/Work/taishan/server/srvframe/tags/cscope.out 
 
 "set autochdir
-set tags+=tags/tags
-set tags+=~/Work/taishan/server/framecommon/tags/tags
-set tags+=~/Work/taishan/server/srvframe/tags/tags
+"set tags+=tags/tags
+"set tags+=~/Work/taishan/server/framecommon/tags/tags
+"set tags+=~/Work/taishan/server/srvframe/tags/tags
 
 "set tags+=~/.vim/cpp_src/tags
 "set tags+=/usr/include/tags
@@ -180,20 +153,20 @@ set tags+=~/Work/taishan/server/srvframe/tags/tags
 
 
 "setting for omnicppcomplete========================================
-let OmniCpp_GlobalScopeSearch = 1  " 0 or 1
-let OmniCpp_NamespaceSearch = 1   " 0 ,  1 or 2
-let OmniCpp_DisplayMode = 1 
-let OmniCpp_ShowScopeInAbbr = 0 
-let OmniCpp_ShowPrototypeInAbbr = 1 
-let OmniCpp_ShowAccess = 1 
-let OmniCpp_MayCompleteDot = 1 
-let OmniCpp_MayCompleteArrow = 1 
-let OmniCpp_MayCompleteScope = 1 
-"let g:SuperTabRetainCompletionType=2
-"let g:SuperTabDefaultCompletionType="<C-X><C-O>"
-set completeopt=longest,menu
-let g:EchoFuncKeyPrev='<Up>'
-let g:EchoFuncKeyNext='<Down>' 
+"let OmniCpp_GlobalScopeSearch = 1  " 0 or 1
+"let OmniCpp_NamespaceSearch = 1   " 0 ,  1 or 2
+"let OmniCpp_DisplayMode = 1 
+"let OmniCpp_ShowScopeInAbbr = 0 
+"let OmniCpp_ShowPrototypeInAbbr = 1 
+"let OmniCpp_ShowAccess = 1 
+"let OmniCpp_MayCompleteDot = 1 
+"let OmniCpp_MayCompleteArrow = 1 
+"let OmniCpp_MayCompleteScope = 1 
+""let g:SuperTabRetainCompletionType=2
+""let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+"set completeopt=longest,menu
+"let g:EchoFuncKeyPrev='<Up>'
+"let g:EchoFuncKeyNext='<Down>' 
 
 "setting for multi-encoding ========================================
 if has("multi_byte")
