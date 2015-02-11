@@ -81,7 +81,9 @@ set number				" set show line num
 set vb t_vb=			" set nobell
 filetype on
 
-"set expandtab
+set ts=4
+set expandtab
+set autoindent
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
