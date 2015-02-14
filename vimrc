@@ -71,12 +71,8 @@ map <C-]> g<C-]>
 let Tlist_WinWidth=30
 map <silent><leader>tl :TlistToggle<cr>
 
-
-"setting for winmanager==============================================
-let g:winManagerWindowLayout = "FileExplorer,BufExplorer|TagList"
-let g:winManagerWidth = 30
-let g:defaultExplorer = 0
-nmap <silent> <leader>wm :WMToggle<cr>
+"setting for minibufexpl===============================================
+let g:miniBufExplorerMoreThanOne=1                      " 即使只有一个文件，也显示minibuf窗口
 
 
 "setting for cscope+ctags===========================================
