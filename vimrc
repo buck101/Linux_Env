@@ -74,7 +74,6 @@ map <silent><leader>tl :TlistToggle<cr>
 "setting for minibufexpl===============================================
 let g:miniBufExplorerMoreThanOne=1                      " 即使只有一个文件，也显示minibuf窗口
 
-
 "setting for cscope+ctags===========================================
 cs add tags/cscope.out
 cs add ~/Work/taishan/server/framecommon/tags/cscope.out 
