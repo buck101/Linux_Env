@@ -6,11 +6,9 @@ filetype plugin indent on
 set nocompatible    "关闭vi兼容
 set number 
 set vb t_vb=                    " set nobell
-
 set tabstop=4 	"same as set ts=4 每个tab表示4个空格
 set expandtab	"same as set et 用空格展开tab
 set listchars=tab:>-,trail:- "展开时用什么符号显示tab
-
 set helplang=en "用英文帮助文档而不是中文帮助
 
 "set softtabstop=4
@@ -24,9 +22,19 @@ set helplang=en "用英文帮助文档而不是中文帮助
 "选择配色方案
 "colorscheme desert
 
+"在多窗口中跳来跳去的设置
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l 
+
+
 "=============for pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
+
+
+
 
 "setting for multi-encoding ========================================
 if has("multi_byte")
@@ -38,9 +46,12 @@ else
 endif
 
 
+
+
 "setting for NERD tree===============================================
 nmap <silent> <leader>tt :NERDTreeToggle<cr>
 let NERDTreeWinSize=30
+
 
 "setting for taglist=================================================
 let Tlist_Ctags_Cmd='ctags'
@@ -60,11 +71,13 @@ map <C-]> g<C-]>
 let Tlist_WinWidth=30
 map <silent><leader>tl :TlistToggle<cr>
 
+
 "setting for winmanager==============================================
 let g:winManagerWindowLayout = "FileExplorer,BufExplorer|TagList"
 let g:winManagerWidth = 30
 let g:defaultExplorer = 0
 nmap <silent> <leader>wm :WMToggle<cr>
+
 
 "setting for cscope+ctags===========================================
 cs add tags/cscope.out
