@@ -99,13 +99,9 @@ set number				" set show line num
 set vb t_vb=			" set nobell
 filetype on
 
-<<<<<<< HEAD
-set expandtab
-=======
 set ts=4
 set expandtab
 set autoindent
->>>>>>> d6fb510038d4b0f8f2e3a5ede9c87e5f2fde7751
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
