@@ -22,6 +22,3 @@
 [submodule "vim/bundle/YouCompleteMe"]
 	path = vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule "vim/bundle/Visual-Mark"]
-	path = vim/bundle/Visual-Mark
-	url = https://github.com/vim-scripts/Visual-Mark.git
