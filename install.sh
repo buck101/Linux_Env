@@ -17,11 +17,12 @@ git submodule add https://github.com/vim-scripts/taglist.vim.git vim/bundle/tagl
 git submodule add https://github.com/scrooloose/nerdtree.git vim/bundle/nerdtree
 git submodule add https://github.com/fholgado/minibufexpl.vim.git vim/bundle/minibufexpl.vim
 git submodule add https://github.com/vim-scripts/a.vim.git vim/bundle/a.vim
-git submodule add https://github.com/Valloric/YouCompleteMe.git vim/bundle/YouCompleteMe
-cd vim/bundle/YouCompleteMe
-git submodule update --init --recursive
-./install.sh --clang-completer
-cd -
+
+#git submodule add https://github.com/Valloric/YouCompleteMe.git vim/bundle/YouCompleteMe
+#cd vim/bundle/YouCompleteMe
+#git submodule update --init --recursive
+#./install.sh --clang-completer
+#cd -
 
 git submodule init
 git submodule update
