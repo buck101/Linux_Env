@@ -1,4 +1,6 @@
 
+exit
+
 rm -rf ~/.gdbinit
 rm -rf ~/.vimrc
 rm -rf ~/.vim
@@ -10,15 +12,15 @@ ln -s `pwd`/gdbinit ~/.gdbinit
 ln -s `pwd`/vimrc ~/.vimrc
 mkdir vim
 ln -s `pwd`/vim ~/.vim
-#git submodule add https://github.com/tpope/vim-pathogen.git vim/bundle/vim-pathogen
-#git submodule add https://github.com/gmarik/vundle.git vim/bundle/vundle
-#git submodule add https://github.com/mattn/emmet-vim.git vim/bundle/emmet-vim
-#git submodule add https://github.com/vim-scripts/taglist.vim.git vim/bundle/taglist
-#git submodule add https://github.com/scrooloose/nerdtree.git vim/bundle/nerdtree
-#git submodule add https://github.com/fholgado/minibufexpl.vim.git vim/bundle/minibufexpl.vim
-#git submodule add https://github.com/vim-scripts/a.vim.git vim/bundle/a.vim
-#git submodule add https://github.com/vim-scripts/Visual-Mark.git vim/bundle/Visual-Mark
-#git submodule add https://github.com/Valloric/YouCompleteMe.git vim/bundle/YouCompleteMe
+git submodule add https://github.com/tpope/vim-pathogen.git vim/bundle/vim-pathogen
+git submodule add https://github.com/gmarik/vundle.git vim/bundle/vundle
+git submodule add https://github.com/mattn/emmet-vim.git vim/bundle/emmet-vim
+git submodule add https://github.com/vim-scripts/taglist.vim.git vim/bundle/taglist
+git submodule add https://github.com/scrooloose/nerdtree.git vim/bundle/nerdtree
+git submodule add https://github.com/fholgado/minibufexpl.vim.git vim/bundle/minibufexpl.vim
+git submodule add https://github.com/vim-scripts/a.vim.git vim/bundle/a.vim
+git submodule add https://github.com/vim-scripts/Visual-Mark.git vim/bundle/Visual-Mark
+git submodule add https://github.com/Valloric/YouCompleteMe.git vim/bundle/YouCompleteMe
 
 git submodule init
 git submodule update
