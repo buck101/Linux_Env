@@ -29,4 +29,14 @@ git submodule update
 
 #git submodule add https://github.com/vim-scripts/winmanager.git vim/bundle/winmanager
 
+cd dl
+bunzip2 -d vim-7.4.tar.bz2
+tar xvf vim-7.4.tar
+cd vim74
+./configure  --prefix=/usr --disable-gui --disable-selinux --enable-cscope --enable-pythoninterp --enable-multibyte --enable-xim --enable-fontset --enable-netbeans --with-features=huge --enable-perlinterp --enable-python3interp --enable-tclinterp --enable-rubyinterp --enable-luainterp  
+make
+sudo make install
+
+
+
 
