@@ -42,6 +42,9 @@ cd vim74
 make
 sudo make install
 
-
+cd ..
+tar xvzf vimcdoc-1.9.0.tar.gz
+cd vimcdoc-1.9.0
+sudo ./vimcdoc.sh -I
 
 

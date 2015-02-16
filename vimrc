@@ -6,6 +6,7 @@ filetype plugin indent on
 set nocompatible    "关闭vi兼容
 set number 
 set vb t_vb=                    " set nobell
+set t_Co=256    "配合ssh使用
 
 set tabstop=4 	"same as set ts=4 每个tab表示4个空格
 set expandtab	"same as set et 用空格展开tab
@@ -13,12 +14,9 @@ set softtabstop=4
 set shiftwidth=4
 set listchars=tab:>-,trail:- "展开时用什么符号显示tab
 
-"set omnifunc=syntaxcomplete#Complete  "开启Omni补全
-"set completeopt=longest,menu  "取消全能补全预览窗口
-"set complete
 
-"set helplang=en "用英文帮助文档而不是中文帮助
-set helplang=cn 
+
+set helplang=en "用英文帮助文档而不是中文帮助
 
 set showmatch " 高亮显示匹配的括号 
 "set nohlsearch                  " no hightlight search
@@ -28,11 +26,22 @@ set showmatch " 高亮显示匹配的括号
 "选择配色方案
 "colorscheme desert
 
-"在多窗口中跳来跳去的设置
+
+"在多窗口中跳来跳去的快捷键映射
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
-nmap <C-l> <C-w>l 
+nmap <C-l> <C-w>l
+
+"与vim自带的补全complete相关的设置
+"set omnifunc=syntaxcomplete#Complete  "开启Omni补全
+"set completeopt=longest,menu  "取消全能补全预览窗口
+"set complete
+inoremap <C-]> <C-X><C-]>
+inoremap <C-F> <C-X><C-F>
+inoremap <C-D> <C-X><C-D>
+inoremap <C-L> <C-X><C-L>
+inoremap <C-O> <C-X><C-O>
 
 
 "=============for pathogen
