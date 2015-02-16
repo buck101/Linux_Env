@@ -6,18 +6,19 @@ filetype plugin indent on
 set nocompatible    "关闭vi兼容
 set number 
 set vb t_vb=                    " set nobell
+
 set tabstop=4 	"same as set ts=4 每个tab表示4个空格
 set expandtab	"same as set et 用空格展开tab
+set softtabstop=4
+set shiftwidth=4
 set listchars=tab:>-,trail:- "展开时用什么符号显示tab
+
 set helplang=en "用英文帮助文档而不是中文帮助
 
-"set softtabstop=4
-"set shiftwidth=4
-"set showmatch
+set showmatch " 高亮显示匹配的括号 
 "set nohlsearch                  " no hightlight search
 "set cursorline         " set current line underline
 "set nobackup
-"set helplang=en
 
 "选择配色方案
 "colorscheme desert
