@@ -17,7 +17,8 @@ set listchars=tab:>-,trail:- "展开时用什么符号显示tab
 "set completeopt=longest,menu  "取消全能补全预览窗口
 "set complete
 
-set helplang=en "用英文帮助文档而不是中文帮助
+"set helplang=en "用英文帮助文档而不是中文帮助
+set helplang=cn 
 
 set showmatch " 高亮显示匹配的括号 
 "set nohlsearch                  " no hightlight search

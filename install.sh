@@ -21,6 +21,7 @@ git submodule add https://github.com/fholgado/minibufexpl.vim.git vim/bundle/min
 git submodule add https://github.com/vim-scripts/a.vim.git vim/bundle/a.vim
 git submodule add https://github.com/vim-scripts/Visual-Mark.git vim/bundle/Visual-Mark
 git submodule add https://github.com/Valloric/YouCompleteMe.git vim/bundle/YouCompleteMe
+git submodule add https://github.com/upsuper/vim-colorschemes.git vim-colorschemes 
 
 git submodule init
 git submodule update
