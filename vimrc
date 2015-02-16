@@ -13,6 +13,10 @@ set softtabstop=4
 set shiftwidth=4
 set listchars=tab:>-,trail:- "展开时用什么符号显示tab
 
+"set omnifunc=syntaxcomplete#Complete  "开启Omni补全
+"set completeopt=longest,menu  "取消全能补全预览窗口
+"set complete
+
 set helplang=en "用英文帮助文档而不是中文帮助
 
 set showmatch " 高亮显示匹配的括号 
@@ -78,6 +82,9 @@ let g:miniBufExplorerMoreThanOne=1                      " 即使只有一个文�
 "setting for YouCompleteMe===============================================
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py' 
 
+"setting for man
+source $VIMRUNTIME/ftplugin/man.vim
+nmap <C-M> :Man 3 <cword><CR>
 
 "setting for cscope+ctags===========================================
 cs add tags/cscope.out
