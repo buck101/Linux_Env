@@ -89,6 +89,8 @@ let g:miniBufExplorerMoreThanOne=1                      " 即使只有一个文�
 
 "setting for YouCompleteMe===============================================
 let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py' 
+nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 
 "setting for man
 source $VIMRUNTIME/ftplugin/man.vim
