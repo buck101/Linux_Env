@@ -67,13 +67,13 @@ let g:agprg="ag --case-sensitive --column"
 
 "=============for ultisnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<leader><tab>"
+let g:UltiSnipsJumpForwardTrigger="<leader><c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<leader><c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetDirectories=["UltiSnips"] 
-let g:UltiSnipsSnippetsDir = '~/.vim/bundle/vim-snippets/UltiSnips'
+let g:UltiSnipsSnippetDirectories=["mysnippets","UltiSnips"] 
+let g:UltiSnipsSnippetsDir = '~/.vim/mysnippets'
 
 
 "=============for CtrlSF
@@ -117,7 +117,8 @@ map <silent><leader>tl :TlistToggle<cr>
 let g:miniBufExplorerMoreThanOne=1                      " 即使只有一个文件，也显示minibuf窗口
 
 "setting for YouCompleteMe===============================================
-let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py' 
+"let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py' 
+let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py' 
 nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 
