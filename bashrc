@@ -169,3 +169,4 @@ export TIMOUT=1000000
 
 export PATH=~/usr/bin:$PATH:/usr/sbin
 export PATH=~/.cabal/bin:$PATH
+

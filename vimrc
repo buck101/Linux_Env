@@ -21,6 +21,7 @@ set showmatch           " 高亮显示匹配的括号
 "set cursorline         " set current line underline
 "set nobackup
 
+
 "选择配色方案
 "colorscheme desert
 
@@ -47,6 +48,8 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 
+"=============for STL-Syntax 
+"增加对STL类高亮的支持
 
 
 "setting for multi-encoding ========================================
