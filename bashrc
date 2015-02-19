@@ -121,6 +121,7 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias dstat='dstat -cdlmnpsy'
+alias ag='ag -s'
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then

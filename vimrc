@@ -62,10 +62,21 @@ else
 endif
 
 
+"=============for ag.vim
+let g:agprg="ag --case-sensitive --column"
+
 "=============for CtrlSF
+let g:ctrlsf_ackprg='ag'
 let g:ctrlsf_position='bottom'
 let g:ctrlsf_context=''
-let g:ctrlsf_winsize = '30%'
+let g:ctrlsf_winsize='30%'
+
+nmap <C-F>f <Plug>CtrlSFPrompt
+vmap <C-F>f <Plug>CtrlSFVwordPath
+vmap <C-F>F <Plug>CtrlSFVwordExec
+nmap <C-F>n <Plug>CtrlSFCwordPath
+nmap <C-F>p <Plug>CtrlSFPwordPath
+nnoremap <C-F>o :CtrlSFOpen<CR>
 
 
 "setting for NERD tree===============================================
