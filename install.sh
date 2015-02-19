@@ -21,7 +21,7 @@ git submodule add https://github.com/fholgado/minibufexpl.vim.git vim/bundle/min
 git submodule add https://github.com/vim-scripts/a.vim.git vim/bundle/a.vim
 git submodule add https://github.com/Valloric/YouCompleteMe.git vim/bundle/YouCompleteMe
 git submodule add https://github.com/Mizuchi/STL-Syntax.git vim/bundle/STL-Syntax
-git submodule add https://github.com/mileszs/ack.vim.git ack.vim
+git submodule add https://github.com/mileszs/ack.vim.git vim/bundle/ack.vim
 
 git submodule init
 git submodule update
