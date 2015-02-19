@@ -23,7 +23,7 @@ set showmatch           " 高亮显示匹配的括号
 
 
 "选择配色方案
-"colorscheme desert
+colorscheme desert
 
 
 "在多窗口中跳来跳去的快捷键映射
@@ -62,6 +62,11 @@ else
 endif
 
 
+
+"=============for CtrlSF
+let g:ctrlsf_position='bottom'
+let g:ctrlsf_context=''
+let g:ctrlsf_winsize = '30%'
 
 
 "setting for NERD tree===============================================
