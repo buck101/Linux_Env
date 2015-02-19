@@ -25,6 +25,9 @@ git submodule add https://github.com/Valloric/YouCompleteMe.git vim/bundle/YouCo
 git submodule add https://github.com/Mizuchi/STL-Syntax.git vim/bundle/STL-Syntax
 git submodule add https://github.com/dyng/ctrlsf.vim.git vim/bundle/ctrlsf.vim
 git submodule add https://github.com/rking/ag.vim vim/bundle/ag.vim
+git submodule add https://github.com/scrooloose/nerdcommenter vim/bundle/nerdcommenter
+git submodule add https://github.com/SirVer/ultisnips.git vim/bundle/ultisnips
+git submodule add https://github.com/honza/vim-snippets.git vim/bundle/vim-snippets
 
 
 git submodule init
