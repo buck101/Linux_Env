@@ -23,7 +23,7 @@ set showmatch           " 高亮显示匹配的括号
 
 
 "选择配色方案
-colorscheme desert
+"colorscheme desert
 
 
 "在多窗口中跳来跳去的快捷键映射
@@ -60,7 +60,6 @@ if has("multi_byte")
 else
  echoerr "Sorry, this version of (g)vim was not compiled with multi_byte"
 endif
-
 
 
 "=============for CtrlSF
