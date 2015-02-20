@@ -57,6 +57,8 @@ flags = [
     '-I', 
     '/usr/include/', 
     '-I', 
+    '/usr/include/c++/4.6/'
+    '-I', 
     '/usr/include/c++/4.8/'
 ]
 

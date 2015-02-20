@@ -120,6 +120,8 @@ let g:miniBufExplorerMoreThanOne=1                      " 即使只有一个文�
 "let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py' 
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py' 
 nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+let g:ycm_enable_diagnostic_signs=0
+let g:ycm_enable_diagnostic_highlighting=0
 
 
 "setting for man
