@@ -42,6 +42,16 @@ inoremap <C-D> <C-X><C-D>
 inoremap <C-L> <C-X><C-L>
 inoremap <C-O> <C-X><C-O>
 
+"为不同的文件类型设置不同的空格数替换TAB
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set ai
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set sw=4
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set ts=4
+autocmd FileType php,python,c,java,perl,shell,bash,vim,ruby,cpp set sts=4
+autocmd FileType javascript,html,css,xml set ai
+autocmd FileType javascript,html,css,xml set sw=2
+autocmd FileType javascript,html,css,xml set ts=2
+autocmd FileType javascript,html,css,xml set sts=2
+
 
 "=============for pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
