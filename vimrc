@@ -138,6 +138,11 @@ let g:ycm_enable_diagnostic_highlighting=0
 source $VIMRUNTIME/ftplugin/man.vim
 nmap <C-M> :Man 3 <cword><CR>
 
+"setting for markdown
+set nofoldenable
+let g:vim_markdown_folding_disabled=1
+
+
 "setting for cscope+ctags===========================================
 cs add tags/cscope.out
 cs add ~/Work/taishan/server/framecommon/tags/cscope.out 

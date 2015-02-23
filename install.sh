@@ -28,6 +28,9 @@ git submodule add https://github.com/rking/ag.vim vim/bundle/ag.vim
 git submodule add https://github.com/scrooloose/nerdcommenter vim/bundle/nerdcommenter
 git submodule add https://github.com/SirVer/ultisnips.git vim/bundle/ultisnips
 git submodule add https://github.com/honza/vim-snippets.git vim/bundle/vim-snippets
+git submodule add https://github.com/plasticboy/vim-markdown.git vim/bundle/vim-markdown
+git submodule add https://github.com/vim-pandoc/vim-pandoc-syntax.git vim/bundle/vim-pandoc-syntax
+git submodule add https://github.com/vim-pandoc/vim-pandoc.git vim/bundle/vim-pandoc
 
 
 git submodule init
