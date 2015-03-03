@@ -1,6 +1,6 @@
 
 exit
-
+cat hosts >> /etc/hosts
 rm -rf ~/.gdbinit
 rm -rf ~/.vimrc
 rm -rf ~/.vim
