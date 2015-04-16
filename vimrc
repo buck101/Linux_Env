@@ -103,6 +103,7 @@ nnoremap <C-F>o :CtrlSFOpen<CR>
 "setting for NERD tree===============================================
 nmap <silent> <leader>tt :NERDTreeToggle<cr>
 let NERDTreeWinSize=30
+let NERDTreeShowHidden=1
 
 
 "setting for taglist=================================================
