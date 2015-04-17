@@ -9,7 +9,7 @@ set vb t_vb=                    " set nobell
 "set t_Co=256    "配合ssh使用
 
 set tabstop=4 	"same as set ts=4 每个tab表示4个空格
-set expandtab	"same as set et 用空格展开tab
+"set expandtab	"same as set et 用空格展开tab
 set softtabstop=4
 set shiftwidth=4
 set listchars=tab:>-,trail:- "展开时用什么符号显示tab
@@ -63,13 +63,9 @@ call pathogen#infect()
 
 
 "setting for multi-encoding ========================================
-if has("multi_byte")
- set encoding=utf-8
- set termencoding=utf-8
- set fileencoding=utf-8
-else
- echoerr "Sorry, this version of (g)vim was not compiled with multi_byte"
-endif
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
 
 
 "=============for ag.vim
