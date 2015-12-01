@@ -2,16 +2,21 @@
 syntax enable
 syntax on
 filetype plugin indent on
+set autoindent	"same as set ai: vim使用自动对起，也就是把当前行的对起格式应用到下一行
+set smartindent		"same as set si:依据上一行的对齐格式，智能的选择对起方式，对于类似C语言编写上很有用
+"set cindent    "same as set ci
 
-set nocompatible    "关闭vi兼容
+set nocompatible	"关闭vi兼容
 set number 
 set vb t_vb=                    " set nobell
-"set t_Co=256    "配合ssh使用
+"set t_Co=256	"配合ssh使用
 
-set tabstop=4 	"same as set ts=4 每个tab表示4个空格
-"set expandtab	"same as set et 用空格展开tab
-set softtabstop=4
-set shiftwidth=4
+set tabstop=4	"same as set ts=4 每个tab表示4个空格
+set expandtab	"same as set et 用空格展开tab
+
+set smarttab    "same as set sta
+set softtabstop=4	"same as set sts
+set shiftwidth=4	"same as set sw
 set listchars=tab:>-,trail:- "展开时用什么符号显示tab
 
 set helplang=en         "用英文帮助文档而不是中文帮助
@@ -146,5 +151,9 @@ set tags+=/usr/include/tags
 cs add ~/.vim/cpp_src/cscope.out ~/.vim/cpp_src/
 cs add /usr/include/cscope.out /usr/include/
 
-"
+"setting for python
+autocmd FileType python setlocal et sta sw=4 sts=4
+autocmd FileType python setlocal foldmethod=indent
+set foldlevel=99	"默认展开所有代码
+
 Helptags
