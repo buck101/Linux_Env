@@ -14,7 +14,7 @@ set vb t_vb=                    " set nobell
 set tabstop=4	"same as set ts=4 每个tab表示4个空格
 "set expandtab	"same as set et 用空格展开tab 相当用空格替换TAB，这样删一个TAB时要按多次
 
-"set smarttab    "same as set sta 开启的话会使autoindent和smartindent失效
+set smarttab    "same as set sta 开启的话会使autoindent和smartindent失效
 set softtabstop=4	"same as set sts
 set shiftwidth=4	"same as set sw
 set listchars=tab:>-,trail:- "展开时用什么符号显示tab
