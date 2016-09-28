@@ -33,6 +33,7 @@ git submodule add https://github.com/honza/vim-snippets.git vim/bundle/vim-snipp
 git submodule add https://github.com/plasticboy/vim-markdown.git vim/bundle/vim-markdown
 git submodule add https://github.com/vim-pandoc/vim-pandoc-syntax.git vim/bundle/vim-pandoc-syntax
 git submodule add https://github.com/vim-pandoc/vim-pandoc.git vim/bundle/vim-pandoc
+git submodule add https://github.com/fatih/vim-go.git vim/bundle/vim-go
 
 
 git submodule init

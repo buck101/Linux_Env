@@ -8,6 +8,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias dstat='dstat -cdlmnpsy'
 alias ag='ag -s'
+alias s='screen'
 
 #######################################
 # Some useful commands to use docker.
@@ -56,17 +57,26 @@ function docker-enter() {
     fi
 }
 #######################################
-export LANG=C
-export LC_CTYPE=en_US.UTF-8
+#export LANG=C
+#export LC_CTYPE=en_US.UTF-8
 #export JAVA_HOME=/usr/java/java-openjdk6/build/linux-amd64/j2sdk-image
 #export JAVA_HOME=/usr/java/java-openjdk6/build/linux-amd64-debug/j2sdk-image
 #export JAVA_HOME=/usr/java/java-openjdk6/build/linux-amd64-fastdebug/j2sdk-image
 
-#export JAVA_HOME=/usr/java/jdk1.6.0_32
-#
-#export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-#export PATH=$JAVA_HOME/bin:$PATH
-#
+export JAVA_HOME=/usr/java/jdk
+
+export CLASSPATH=.:$JAVA_HOME/jre/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$JAVA_HOME/bin:$PATH
+
+export ANT_HOME=/usr/local/ant/apache-ant-1.9.6
+export PATH=$ANT_HOME/bin:$PATH
+
+export MAVEN_HOME=/usr/local/maven/apache-maven-3.3.9
+export PATH=$MAVEN_HOME/bin:$PATH
+
+export M2_HOME=/usr/local/maven/apache-maven-3.3.9
+export PATH=$M2_HOME/bin:$PATH
+
 #export HBASE_HOME=/usr/local/hbase/hbase-0.92.1
 #export PATH=$HBASE_HOME/bin:$PATH
 #
@@ -76,27 +86,19 @@ export LC_CTYPE=en_US.UTF-8
 #export MONGODB_HOME=/usr/local/mongodb/mongodb-linux-x86_64-2.0.5
 #export PATH=$MONGODB_HOME/bin:$PATH
 #
-#export MAVEN_HOME=/usr/local/maven/apache-maven-3.0.4
-#export PATH=$MAVEN_HOME/bin:$PATH
-#
-#export ANT_HOME=/usr/local/ant/apache-ant-1.8.3
-#export PATH=$ANT_HOME/bin:$PATH
-#
-#export M2_HOME=/usr/local/maven/apache-maven-3.0.4
-#export PATH=$M2_HOME/bin:$PATH
-#
 #export PATH=/opt/CodeSourcery/Sourcery_G++_Lite/bin:$PATH
 #export PATH=/usr/local/nginx/sbin:$PATH
 #
-#export GOROOT=~/Explores/go
-#export GOBIN=$GOROOT/bin
+export GOROOT=/usr/local/go
+export GOBIN=$GOROOT/bin
+export GOPATH=~/Works/Golang
 #export GOARCH=amd64
 #export GOOS=linux
-#export PATH=$GOBIN:$PATH
+export PATH=$GOBIN:$GOPATH/bin:$PATH
 #
 #export TIMOUT=1000000 
 #
-export PATH=~/usr/bin:$PATH:/usr/sbin
+export PATH=~/usr/bin:$PATH:/usr/sbin:~/ffmpeg/bin
 #export PATH=~/.cabal/bin:$PATH
 #
 #export MANPATH=${MANPATH}:/usr/local/texlive/2014/texmf-dist/doc/man
@@ -104,4 +106,6 @@ export PATH=~/usr/bin:$PATH:/usr/sbin
 #export PATH=${PATH}:/usr/local/texlive/2014/bin/x86_64-linux
 #
 #PS1='${debian_chroot:+($debian_chroot)}\[\e[1;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+export PKG_CONFIG_PATH=/home/chenhui/ffmpeg/lib/pkgconfig
 
