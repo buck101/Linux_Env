@@ -90,11 +90,12 @@ export PATH=$M2_HOME/bin:$PATH
 #export PATH=/usr/local/nginx/sbin:$PATH
 #
 export GOROOT=/usr/local/go
-export GOBIN=$GOROOT/bin
-export GOPATH=~/Works/Golang
+#export GOBIN=$GOROOT/bin
+export GOPATH=~/Works/Golang/sys:~/Works/Golang/fengxiu
+#export GOPATH=~/Works/Golang:~/Works/Golang/fengxiu
 #export GOARCH=amd64
 #export GOOS=linux
-export PATH=$GOBIN:$GOPATH/bin:$PATH
+export PATH=$GOROOT/bin:$PATH
 #
 #export TIMOUT=1000000 
 #
